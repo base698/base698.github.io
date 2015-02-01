@@ -1,1 +1,457 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  html {
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+    color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .header-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  nav ul li a.nav-link {
+    color: rgba(0,0,0,0.6);
+    font-weight: 400;
+    letter-spacing: .1em;
+    padding: 31px 0 19px;
+    text-decoration: none;
+  }
+
+  nav ul li a.nav-link:hover {
+    color: rgba(0,0,0,0.8);
+  }
+
+  nav ul li a.nav-link.selected {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .social {
+    vertical-align: middle;
+    font-size: 18px;
+    height: 26px;
+    vertical-align: middle;
+    padding-top: 2px;
+    display: inline-block;
+  }
+
+  .social.github {
+    display:inline-block;
+    padding-left: 42px;
+    height:32px;
+    background-image: url(GitHub-Mark-32px.png);
+    background-repeat: no-repeat;
+  }
+
+  #skills {
+    margin-top:14px;
+  }
+
+  .page {
+    padding: 60px 0 0 19px;
+  }
+
+  p.info {
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+  }
+    
+  p.info a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+  }
+
+  p.info label {
+    color: rgba(0,0,0,1);
+  }
+
+  p.info span {
+    font-size: 18px;
+    display:block;
+  }
+
+  p.info .address {
+  }
+
+  p.info .email {
+  }
+
+  p.info .phone {
+  }
+
+  .job h4 {
+    margin-bottom: 2px;
+    position: relative;
+  }
+
+  .job .date {
+    right: 0;
+    position: absolute;
+  }
+
+  .job .company-name {
+  }
+
+  .job .title {
+    font-size: 14px;
+    color: rgba(0,0,0,0.6); 
+    margin-left: 7px;
+  }
+
+  .job .links a {
+    text-decoration: none;
+    color: rgba(0,0,150,0.8);
+    font-weight: 400;
+    padding: 31px 0 19px;
+    text-decoration: none;
+  }
+
+  .job .links {
+    margin-top: 7px;
+  }
+
+  .job .description a {
+    text-decoration: none;
+    color: rgba(0,0,200,0.8);
+    font-weight: 400;
+    padding: 31px 0 19px;
+    text-decoration: none;
+  }
+
+  .job {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .divider {
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+    margin-bottom: 6px;
+  }
+
+  .page {
+    width: 80%;
+  }
+
+  .page p.description {
+    display: block;
+    margin: 7px 0 0;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-left: -0.9px;
+  }
+
+  div.page h2 {
+    line-height: 1.3;
+    font-size: 24px;
+    margin-left: -1.2px;
+  }
+
+  .degree {
+    list-style-type: none;
+  }
+
+  .tag-list li {
+    list-style-type: none;
+    display: inline-block;
+    border: solid rgba(0,0,0,0.3) 1px;
+    border-radius: 3px;
+    color: rgba(0,50,0,0.6);
+    padding: 4px 10px 4px 10px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+  }
+
+  .type {
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+  }
+
+  ul.degree li {
+    margin-top:8px;
+  }
+
+  .other ul li {
+    margin-top: 6px;
+    list-style-type: none;
+  }
+  </style>
+</head>
+
+<body>
+<div class="header-bar">
+  <nav>
+    <ul>
+      <li><a href="#about" link="about" class="nav-link selected">Justin</a></li>
+      <li><a href="#experience" link="experience" class="nav-link">Experience</a></li>
+      <li><a href="#education" link="education" class="nav-link">Education</a></li>
+      <li><a href="#other" link="other" class="nav-link">Other</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="about" class="page about"> 
+    <h3 class="name">Justin Thomas</h2>
+    <p class="info">
+     <label class="social github"></label>
+     <span><a href="https://github.com/base698">https://github.com/base698</a></span>
+    </p>
+    <p class="info">
+     <label class="social stackoverflow">StackOverflow</label>
+     <span class="field"><a href="http://stackoverﬂow.com/users/491770/justin-thomas">http://stackoverﬂow.com/users/491770/justin-thomas</a></span>
+    </p>
+    <p class="info">
+     <label class="social linkedin">LinkedIn</label>
+     <span class="field"><a href="https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/">https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/</a></span>
+    </p>
+    <p class="info">
+     <label class="social email">Email</label>
+     <span class="email"><a href="mailto:justin.thomas1@gmail.com">justin.thomas1@gmail.com</a></span>
+    </p>
+
+    <div class="divider"></div>
+    <h3 id="skills">Skills</h3>
+    <p class="info">
+    <label>Languages</label>
+    <br>
+    <ul class="tag-list">
+     <li>JavaScript</li><li>Java</li><li>CoffeeScript</li><li>ClojureScript</li><li>Groovy</li><li>Perl</li><li>Ruby</li><li>Regular Expressions</li>
+    </ul>
+    </p>
+
+    <p class="info">
+    <label>Database</label>
+    <br>
+    <ul class="tag-list">
+     <li>PostgreSQL</li><li> MongoDB</li><li> Oracle</li><li> MySQL</li><li> Microsoft SQL Server</li>
+    </ul>
+    </p>
+
+    <p class="info">
+    <label>General</label>
+    <br>
+    <ul class="tag-list">
+     <li>node.js</li><li> vim</li><li> tmux</li><li> git</li><li> Eclipse</li><li> CVS</li><li> Jenkins</li><li> VMWare</li><li> VirtualBox</li><li> BEA Weblogic</li><li> JBoss</li><li> Maven2</li><li> ANT</li><li> Tomcat</li><li> Minitab</li><li> Excel</li><li> PowerPoint</li><li> Word</li><li> Flex Builder</li>
+    </ul>
+    </p>
+
+    <p class="info">
+    <label>Certifications</label>
+    <br>
+    <ul class="tag-list">
+     <li>Sun Certified Programmer for the Java 2 Platform, SE 5.0</li>
+    </ul>
+    </p>
+
+  </div>
+
+  <div id="experience" class="page experience">
+    <div class="job red-bull">
+     <h4><span class="company-name">Red Bull</span> <span class="title">Software Engineer</span> <span class="date">January 2013 to Present</span></h4>
+      <div class="links">
+        <a href="https://www.redbullsoundselect.com/">Red Bull Sound Select</a>
+      </div>
+      <p class="description">
+        Developed a platform for managing artists, live events, and the social media buzz.  Built the music player
+        for the site allowing sharing of consumer made playlists.  Wrote all data mining of artist social activity so 
+        artists and Red Bull could detect the social media growth of artists.  Correlate social media growth to
+        shows played and tracks released.  Built notifications framework for alerting users of new music in which they 
+        would be interested.
+      </p>
+      <ul class="tag-list">
+        <li>Node.JS</li>
+        <li>JavaScript</li>
+        <li>Angular</li>
+        <li>postgres</li>
+        <li>MongoDB</li>
+        <li>Redis</li>
+        <li>D3</li>
+        <li>Bash</li>
+      </ul>
+    </div>
+
+    <div class="job chromatik">
+     <h4><span class="company-name">Chromatik</span> <span class="title">Software Engineer</span> <span class="date">August 2011 to March 2013</span></h4>
+
+      <div class="links">
+      </div>
+
+      <p class="description">
+        On two developer team that built a web app that allows users to upload PDF versions of their sheet music and 
+        make sharable annotations and recordings of it. The scores can be shared to others for use in both a classroom and 
+        professional bands.  The work I've done has been featured in <a href="http://techcrunch.com/2012/11/15/backed-by-2-million-in-funding-from-learn-capital-kapor-500-startups-bruno-mars-others-chromatiks-digital-music-platform-goes-live/">TechCrunch</a>, Forbes, <a href="http://www.wsj.com/articles/SB10001424052970203400604578075080640810820">
+          Wall Street Journal</a>, and 
+        used on American Idol.  Received a $5 million Series A round.
+      </p>
+      <ul class="tag-list">
+        <li>Node.JS</li>
+        <li>CoffeeScript</li>
+        <li>Backbone.JS</li>
+        <li>MongoDB</li>
+        <li>Bash</li>
+      </ul>
+    </div>
+
+    <div class="job rally">
+     <h4><span class="company-name">Rally Software</span> <span class="title">Software Engineer - R &amp; D</span> <span class="date">April 2010 to September 2011</span></h4>
+
+    <div class="links">
+      <a href="http://www.agilezen.com/">Agile Zen</a>
+    </div>
+    <p class="description">
+      Primary job function is adding features to an Agile based project management tool that has
+      40,000+ concurrent users, which is currently rated the number one agile tool. Other projects included
+      building internal cloud based application to store rotating logs from the main application, our search
+      indexes, attachments uploaded by users, and run Map/Reduce for data mining using Hadoop on a
+      CentOS cluster. Implemented a tagging feature. Researched new analytics architectures and implemented 
+      working model using JavaScript based charting solutions and MongoDB.
+    </p>
+      <ul class="tag-list">
+        <li>Java</li>
+        <li>Spring</li>
+        <li>Grails</li>
+        <li>Oracle</li>
+        <li>Node.JS</li>
+        <li>CoffeeScript</li>
+        <li>Bash</li>
+      </ul>
+
+    </div>
+
+    <div class="job verizon">
+     <h4><span class="company-name">Verizon Business</span> <span class="title">Senior Software Engineer</span> <span class="date">November 2006 to April 2010</span></h4>
+    <p class="description">
+      Was in charge of redesigning the application architecture used by our network management group.
+      Wrote a search engine that decreased search times from 20 seconds to 10 milliseconds using Apache
+      Lucene.  Implemented proof of concepts with Flex3 and Java backend, GWT, and JavaScript.
+      Wrote a hook for the network management platform Smarts to our ticketing system for automated ticketing.
+      Past accomplishments include examining existing algorithms for added performance enhancements. Some such 
+      enhancements decreased data load time from seven minutes to ﬁve seconds. Designed and developed a series 
+      of applications to increase productivity for the existing team of developers, which
+      included writing class dependency generator, database driver wrapper to monitor queries.
+    </p>
+      <ul class="tag-list">
+        <li>Java</li>
+        <li>Spring</li>
+        <li>Oracle</li>
+        <li>Flex</li>
+        <li>GWT</li>
+        <li>Bash</li>
+      </ul>
+    </div>
+
+    <div class="job other">
+     <h4><span class="company-name">First Jobs, college, and interships</span> <span class="date">June 1998 to July 2006</span></h4>
+     <ul>
+       <li><span class="company-name">bioMerieux</span> <span class="title">Java Developer Intern</span></li>
+       <li><span class="company-name">NCSU</span> <span class="title">Lab Intern</span></hli>
+       <li><span class="company-name">Honeywell Inc.</span> <span class="title">ASP.NET Developer</span></li>
+       <li><span class="company-name">Freelance @ Shattered Reality Designs</span> <span class="title">Sys/Linux Admin, Web Designer</span></li>
+     </ul>
+    </div>
+
+  </div>
+
+  <div id="education" class="page education">
+    <h3>North Carolina State University</h3>
+    <ul class="degree">
+      <li>
+        <span class="type">Bachelor of Science</span> 
+        <br>
+        <span class="field">Biochemistry</span>
+      </li>
+      <li>
+        <span class="type">Bachelor of Science</span> 
+        <br>
+        <span class="field">Philosophy</span>
+      </li>
+      <li>
+        <span class="type">Minor</span> 
+        <br>
+        <span class="field">Computer Science</span>
+      </li>
+    </ul>
+  </div>
+
+  <div id="other" class="page other">
+    <h2>Other Activities</h2>
+    <ul>
+      <li>
+        <span class="type">I like to fly</span> 
+        <br>
+        <span class="field">Private Pilot License, D (Expert) Skydiving License, P2 Paragliding License</span>
+      </li>
+
+      <li>
+        <span class="type">QuickLog</span> 
+        <br>
+        <span class="field">A parachuting distance tracker to record wingsuit flights.</span>
+      </li>
+      <li>
+        <span class="type">Sider</span> 
+        <br>
+        <span class="field">An inverted index for redis text search.</span>
+      </li>
+      <li>
+        <span class="type">Informant</span> 
+        <br>
+        <span class="field">A node performance monitor.</span>
+      </li>
+    </ul>
+  </div>
+
+  
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script>
+function changePage(id) {
+  $('.page').hide();
+  $('#' + id).show();
+  $('.nav-link').removeClass('selected');
+}
+
+$('ready', function() {
+  $('.page').hide();
+  $('#about').show();
+  $('.nav-link').on('click', function() {
+    changePage($(this).attr('link'));
+    $(this).addClass('selected');
+  });
+  var re = /^#(.+)/;
+  if(window.location && window.location.hash && re.test(window.location.hash)) {
+    var group = re.exec(window.location.hash);
+    if(group) {
+      changePage(group[1]);
+    }
+  }
+});
+
+
+</script>
+</body>
+</html>
+
