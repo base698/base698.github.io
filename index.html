@@ -22,10 +22,8 @@
     line-height: 1.4;
   }
 
-  #stackoverflow {
-    right: 14px;
-    position: absolute;
-    top: 26px;
+  p.info.stackoverflow {
+    text-align: left;
   }
 
   .header-bar {
@@ -90,6 +88,23 @@
 
   #skills {
     margin-top:14px;
+  }
+
+  p.info.contact {
+    text-align: left;
+    display: inline-block;
+    margin: 0 0 0 35px;
+    border-radius: 5px;
+  }
+
+  p.info.contact span {
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  p.info.contact span a {
+    color: rgba(80,0,149,1);
+    font-weight: bold;
   }
 
   #skills_section p.info {
@@ -281,26 +296,22 @@
 </div>
 
 <div id="about" class="page about"> 
-    <p class="info">
+    <div style="text-align: left" id="contact">
+      <p class="contact info">
+       <span><a href="https://github.com/base698">GitHub</a></span>
+      </p>
+      <p class="contact info">
+       <span class="field"><a href="https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/">LinkedIn</a></span>
+      </p>
+      <p class="contact info">
+       <span class="email"><a href="mailto:justin.thomas1@gmail.com">justin.thomas1@gmail.com</a></span>
+      </p>
+    </div>
+    
+    <p class="stackoverflow info">
       <a href="http://stackoverflow.com/users/491770/justin-thomas">
         <img id="stackoverflow" src="http://stackoverflow.com/users/flair/491770.png" width="208" height="58" alt="profile for Justin Thomas at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Justin Thomas at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
       </a>
-      <!--
-     <label class="social stackoverflow">StackOverflow</label>
-     <span class="field"><a href="http://stackoverﬂow.com/users/491770/justin-thomas">http://stackoverﬂow.com/users/491770/justin-thomas</a></span>
-      -->
-    </p>
-    <p class="info">
-     <label class="social github">GitHub</label>
-     <span><a href="https://github.com/base698">https://github.com/base698</a></span>
-    </p>
-    <p class="info">
-     <label class="social linkedin">LinkedIn</label>
-     <span class="field"><a href="https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/">https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/</a></span>
-    </p>
-    <p class="info">
-     <label class="social email">Email</label>
-     <span class="email"><a href="mailto:justin.thomas1@gmail.com">justin.thomas1@gmail.com</a></span>
     </p>
 
     <div class="divider"></div>
