@@ -23,8 +23,9 @@
   }
 
   #caffeine {
+     visibility: hidden;
      left: 415px;
-     top: 45px;
+     top: 62px;
      position: absolute;
   }
 
@@ -592,7 +593,7 @@ $('ready', function() {
   <script>
     var scene, camera, renderer;
     var geometry, material, mesh;
-    var WIDTH = 200, HEIGHT = 200;
+    var WIDTH = 200, HEIGHT = 150;
 
     init();
     //animate();
@@ -642,6 +643,8 @@ $('ready', function() {
 
         var loader = new THREE.STLLoader();
         loader.load( './caffeine_fixed.stl', function ( geometry ) {
+          
+          document.getElementById('caffeine').style.visibility = 'visible'; 
 
           var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
           mesh = new THREE.Mesh( geometry, material );
