@@ -8,8 +8,21 @@
     overflow-x: hidden;
   }
 
+  #content {
+    margin: 0 auto;
+  }
+
+  @media only screen and (min-width: 768px) {
+   #content {
+      margin: 0 auto;
+      margin-left: 13em;
+      margin-right: 13em;
+   }
+  }
+
   body {
-    font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    margin: 0;
+    font-family: Helvetica, "Lucida Sans"
     letter-spacing: -0.02em;
     font-weight: 400;
     font-style: normal;
@@ -18,30 +31,31 @@
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on;
     color: rgba(0,0,0,0.8);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
   }
 
   #caffeine {
      visibility: hidden;
-     left: 415px;
+     left: 33em;
      top: 62px;
      position: absolute;
   }
 
   p.info.stackoverflow {
+    visibility:hidden;
     text-align: left;
-    margin-left: 34px;
   }
 
   .header-bar {
     position: absolute;
     left: 0;
     right: 0;
+    min-width: 650px;
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   nav ul li {
@@ -67,6 +81,7 @@
     letter-spacing: .1em;
     padding: 31px 0 19px;
     text-decoration: none;
+    font-size: 1.1em;
   }
 
   nav ul li a.nav-link:hover {
@@ -95,30 +110,28 @@
   }
 
   #skills {
-    margin-top:14px;
+    margin-top:10px;
   }
 
   #contact {
-    margin-left: 30px;
     height:25px;
+    margin: 50px 0 0 52px;
+    position: absolute;
+    font-size: 0.7em;
+    min-width: 550px;
   }
 
-  p.info.contact {
+  #contact span {
     text-align: left;
-    display: inline-block;
-    border-radius: 5px;
-  }
-
-  p.info.contact span {
-    padding: 5px;
+    padding: 5px 5px 5px 1em;
     font-size: 12px;
     font-family: helvetica;
     letter-spacing: 1px;
   }
 
-  p.info.contact span a {
+  #contact span a {
     color: rgba(80,0,149,1);
-    font-weight: bold;
+    text-decoration: none;
   }
 
   #skills_section p.info {
@@ -131,12 +144,13 @@
 
 
   .page {
-    padding: 60px 0 0 19px;
+    padding: 70px 0 0 19px;
+    min-width: 650px;
   }
 
   
   p.info {
-    font-size: 16px;
+    font-size: 0.9em;
     color: rgba(0,0,0,0.6);
     text-align: center;
   }
@@ -177,13 +191,14 @@
   .job .date {
     right: 0;
     position: absolute;
+    font-weight: 100;
   }
 
   .job .company-name {
   }
 
   .job .title {
-    font-size: 14px;
+    font-size: 0.8em;
     color: rgba(0,0,0,0.6); 
     margin-left: 7px;
   }
@@ -225,7 +240,7 @@
     display: block;
     margin: 7px 0 0;
     line-height: 1.4;
-    font-size: 18px;
+    font-size: 0.9em;
     margin-left: -0.9px;
   }
 
@@ -241,9 +256,12 @@
 
   .type a {
     color: rgba(0,0,100,0.6);
-    font-weight: 400;
     padding: 31px 0 19px;
     text-decoration: none;
+  }
+
+  .tag-list {
+    min-width: 600px;
   }
 
   .tag-list li {
@@ -255,6 +273,7 @@
     padding: 4px 10px 4px 10px;
     margin-right: 6px;
     margin-bottom: 5px;
+    font-size: 0.8em;
   }
 
   .type {
@@ -264,6 +283,11 @@
 
   ul.degree li {
     margin-top:8px;
+  }
+
+  #other h4 {
+    font-size: 0.9em;
+    margin-bottom: 0.1em;
   }
 
   .other ul li {
@@ -298,6 +322,7 @@
 </head>
 
 <body>
+
 <div class="header-bar">
   <nav>
     <ul>
@@ -311,26 +336,20 @@
   </nav>
 </div>
 
-<div id="about" class="page about"> 
-    <div id="contact">
-      <p class="contact info">
-       <span><a href="https://github.com/base698">GitHub</a></span>
-      </p>
-      <p class="contact info">
-       <span class="field"><a href="https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/">LinkedIn</a></span>
-      </p>
-      <p class="contact info">
-       <span class="email"><a href="mailto:justin.thomas1@gmail.com">justin.thomas1@gmail.com</a></span>
-      </p>
-    </div>
-    
-    <p class="stackoverflow info">
-      <a href="http://stackoverflow.com/users/491770/justin-thomas">
-        <img id="stackoverflow" src="http://stackoverflow.com/users/flair/491770.png" width="208" height="58" alt="profile for Justin Thomas at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Justin Thomas at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-      </a>
-    </p>
+<div id="contact">
+   <span class="phone">310-740-2296</span>
+   <span class="email"><a href="mailto:justin.thomas1@gmail.com">justin.thomas1@gmail.com</a></span>
+   <span class="field"><a href="https://www.linkedin.com/pub/justin-thomas/2/8b6/a10/">LinkedIn</a></span>
+   <span><a href="https://github.com/base698">GitHub</a></span>
+   <p class="stackoverflow info">
+    <a href="http://stackoverflow.com/users/491770/justin-thomas">
+      <img id="stackoverflow" src="http://stackoverflow.com/users/flair/491770.png?theme=clean" alt="profile for Justin Thomas at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Justin Thomas at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+    </a>
+   </p>
+</div>
 
-    <div class="divider"></div>
+<div id="content">
+ <div id="about" class="page about">     
     <h3 id="skills">Skills</h3>
     <div id="skills_section">
       <p class="info">
@@ -384,6 +403,8 @@
         <li>Node.JS</li>
         <li>JavaScript</li>
         <li>Angular</li>
+        <li>Clojure</li>
+        <li>JavaScript</li>
         <li>postgres</li>
         <li>MongoDB</li>
         <li>Redis</li>
@@ -514,32 +535,26 @@
   </div>
 
   <div id="other" class="page other">
-    <h2>Other Activities</h2>
     <ul>
       <li>
-        <span class="type">I like to fly</span> 
-        <br>
-        <span class="field">Private Pilot License, D (Expert) Skydiving License, P2 Paragliding License</span>
+        <h4 class="type">Flying Activities</h4> 
+        <span class="field">Private Pilot License (HP/Complex), D Skydiving License, P2 Paragliding License</span>
       </li>
       <li>
-        <span class="type"><a href="https://github.com/base698/Sider">Sider</a></span> 
-        <br>
+        <h4 class="type"><a href="https://github.com/base698/Sider">Sider</a></h4> 
         <span class="field">An inverted index for redis text search.</span>
       </li>
       <li>
-        <span class="type"><a href="https://github.com/base698/Informant">Informant</a></span> 
-        <br>
+        <h4 class="type"><a href="https://github.com/base698/Informant">Informant</a></h4> 
         <span class="field">A node performance monitor.</span>
       </li>
       <li>
-        <span class="type"><a href="https://chrome.google.com/webstore/detail/hideheid/hdgfhcnkfdfimdndlcdgflbmadiomico?hl=en">HideHeid</a></span> 
-        <br>
-        <span class="field">Chrome App to block users.</span>
+        <h4 class="type"><a href="https://chrome.google.com/webstore/detail/hideheid/hdgfhcnkfdfimdndlcdgflbmadiomico?hl=en">HideHeid</a></h4> 
+        <span class="field">Chrome App to block users on various forums.</span>
       </li>
       <li>
-        <span class="type">QuickLog</span> 
-        <br>
-        <span class="field">A parachuting distance tracker to record wingsuit flights.</span>
+        <h4 class="type">QuickLog</h4> 
+        <span class="field">An webapp to record wingsuit flights.</span>
       </li>
     </ul>
     <br>
@@ -561,34 +576,34 @@
     <br>
 
   </div>
+</div>
 
   
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script>
-function changePage(id) {
-  $('.page').hide();
-  $('#' + id).show();
-  $('.nav-link').removeClass('selected');
-}
-
-$('ready', function() {
-  $('.page').hide();
-  $('#about').show();
-  $('.nav-link').on('click', function() {
-    changePage($(this).attr('link'));
-    $(this).addClass('selected');
-  });
-  var re = /^#(.+)/;
-  if(window.location && window.location.hash && re.test(window.location.hash)) {
-    var group = re.exec(window.location.hash);
-    if(group) {
-      changePage(group[1]);
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script>
+    function changePage(id) {
+      $('.page').hide();
+      $('#' + id).show();
+      $('.nav-link').removeClass('selected');
     }
-  }
-});
 
+    $('ready', function() {
+      $('.page').hide();
+      $('#about').show();
+      $('.nav-link').on('click', function() {
+        changePage($(this).attr('link'));
+        $(this).addClass('selected');
+      });
+      var re = /^#(.+)/;
+      if(window.location && window.location.hash && re.test(window.location.hash)) {
+        var group = re.exec(window.location.hash);
+        if(group) {
+          changePage(group[1]);
+        }
+      }
+    });
 
-</script>
+  </script>
 
   <script>
     var scene, camera, renderer;
