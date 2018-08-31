@@ -336,10 +336,12 @@
   <nav>
     <ul>
       <li><img src="https://secure.gravatar.com/avatar/e09a97373826e075176574ab7530c2d6?s=64"></li>
+
       <li><a href="#about" link="about" class="nav-link selected">Justin</a><div class="underline"></div></li>
       <li><a href="#experience" link="experience" class="nav-link">Experience</a><div class="underline"></div></li>
       <li><a href="#education" link="education" class="nav-link">Education</a><div class="underline"></div></li>
-      <li><a href="#other" link="other" class="nav-link">Other</a><div class="underline"></div></li>
+      <li><a href="#other" link="other" class="nav-link">Other</a><div class="un
+derline"></div></li>
       <li><a href="/JustinThomas-resume.pdf" class="nav-link">Resume</a><div class="underline"></div></li>
     </ul>
   </nav>
@@ -365,7 +367,7 @@
       <label>Languages</label>
       <br>
       <ul class="tag-list">
-       <li>JavaScript</li><li>Java</li><li>Clojure</li><li>ClojureScript</li><li>Groovy</li><li>Perl</li><li>Ruby</li><li>CoffeeScript</li><li>Regular Expressions</li>
+       <li>Golang</li><li>JavaScript</li><li>Python</li><li>Clojure</li><li>ClojureScript</li><li>Perl</li><li>Ruby</li><li>CoffeeScript</li><li>Regular Expressions</li>
       </ul>
       </p>
 
@@ -373,7 +375,7 @@
       <label>Database</label>
       <br>
       <ul class="tag-list">
-       <li>PostgreSQL</li><li> MongoDB</li><li>Oracle</li><li>Redis</li><li> MySQL</li><li> Microsoft SQL Server</li>
+       <li>PostgreSQL</li><li>Redis</li><li>BigQuery</li><li>MongoDB</li><li>Oracle</li><li>MySQL</li>
       </ul>
       </p>
 
@@ -381,40 +383,59 @@
       <label>General</label>
       <br>
       <ul class="tag-list">
-       <li>node.js</li><li> vim</li><li> tmux</li><li> git</li><li>RabbitMQ</li><li> Eclipse</li><li> CVS</li><li> Jenkins</li><li> VMWare</li><li> VirtualBox</li><li> BEA Weblogic</li><li> JBoss</li><li> Maven2</li><li> ANT</li><li> Tomcat</li><li> Minitab</li><li> Excel</li><li> PowerPoint</li><li> Word</li><li> Flex Builder</li>
+       <li>Kubernetes</li><li>node.js</li><li>emacs</li><li>vim</li><li> tmux</li><li> git</li><li>RabbitMQ</li><li> Eclipse</li><li> CVS</li><li> Jenkins</li><li> VMWare</li><li> VirtualBox</li><li> BEA Weblogic</li><li> JBoss</li><li> Maven2</li><li> ANT</li><li> Tomcat</li><li> Minitab</li><li> Excel</li><li> PowerPoint</li><li> Word</li>
       </ul>
       </p>
 
-      <p class="info">
-      <label>Certifications</label>
-      <br>
-      <ul class="tag-list">
-       <li>Sun Certified Programmer for the Java 2 Platform, SE 5.0</li>
-      </ul>
-      </p>
     </div>
   </div>
 
   <div id="experience" class="page experience">
     <div class="job red-bull">
-     <h4><span class="company-name">Red Bull</span> <span class="title">Lead Software Engineer</span> <span class="date">January 2013 to Present</span></h4>
+     <h4><span class="company-name">Red Bull</span> <span class="title">Director of Engineering</span> <span class="date">August 2018 to Present</span></h4>
       <div class="links">
-        <a href="https://www.redbullsoundselect.com/">Red Bull Sound Select</a>
+        <a href="https://www.redbull.tv/">Red Bull TV</a>
       </div>
       <p class="description">
-        Developed a platform for managing artists, live events, and tracking social media buzz around both.  Built a music player
-        for the site allowing sharing of consumer made playlists.  Wrote all data mining of artist social activity so 
-        artists and Red Bull could detect the social media growth of artists.  Correlate social media growth to
-        shows played and tracks released.  Built notifications framework for alerting users of new music in which they 
-        would be interested.  Built ranking algorithm in platform in Clojure to rank artists and create dynamic trending lists.
+      Managed teams responsible for back-end infrastructure for redbull.tv including API, Recommendations & ML, and DevOps. Responsible for developer experience and architecture of platform for all APIs and mobile traffic. Created testing and monitoring infrastructure of APIs in Google Cloud.  Migrated TV platform to Kubernetes in Google Cloud.
       </p>
       <ul class="tag-list">
+        <li>Golang</li>
         <li>Node.JS</li>
         <li>JavaScript</li>
+        <li>nginx</li>
+        <li>Google Cloud Platform</li>
+        <li>Kubernetes</li>
+        <li>TensorFlow</li>
+        <li>postgres</li>
+        <li>D3</li>
+        <li>Bash</li>
+      </ul>
+    </div>
+
+    <div class="job red-bull">
+     <h4><span class="company-name">Red Bull</span> <span class="title">Lead Software Engineer</span> <span class="date">January 2013 to August 2018</span></h4>
+      <div class="links">
+        <a href="https://www.redbullsoundselect.com/">Red Bull TV & Sound Select</a>
+      </div>
+      <p class="description">
+      Managed team responsible for back-end infrastructure for redbull.tv including API and devops. Responsible for developer experience and architecture of platform for all APIs and mobile traffic. Created testing and monitoring infrastructure of APIs in Google Cloud. Also built systems to detect performance problems before consumers detected a degradation of service. Performance analysis of system using time tested tools and techniques. Architecture was responsible for >90% reduction of operational costs.
+
+Previous work includes: 
+A platform for managing musical artists, live events, and tracking social media buzz around both. 
+Online music player with social sharing of consumer made playlists
+Data mining of artist social activity so artists and Red Bull could detect the social media growth of artists and correlate social media growth to shows played and tracks released
+Ranking algorithm in Clojure to rank artists based on social media data and machine learning to create dynamic trending lists.
+      </p>
+      <ul class="tag-list">
+        <li>Golang</li>
+        <li>postgres</li>
+        <li>nginx</li>
+        <li>ElasticSearch</li>
+        <li>JavaScript</li>
+        <li>Node.JS</li>
         <li>Angular</li>
         <li>Clojure</li>
-        <li>JavaScript</li>
-        <li>postgres</li>
         <li>MongoDB</li>
         <li>Redis</li>
         <li>D3</li>
@@ -526,28 +547,14 @@
     <div id="caffeine"></div>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
   </div>
 
   <div id="other" class="page other">
+    <h3>Extracurricular</h3>
     <ul>
       <li>
         <h4 class="type">Flying Activities</h4> 
-        <span class="field">Private Pilot License (HP/Complex), D Skydiving License, P2 Paragliding License</span>
+        <span class="field">Instrument Rated Private Pilot License (HP/Complex), D Skydiving License, P2 Paragliding License</span>
       </li>
       <li>
         <h4 class="type"><a href="http://base698.github.io/ambush/">Ambush</a></h4> 
@@ -570,8 +577,6 @@
         <span class="field">An webapp to record wingsuit flights.</span>
       </li>
     </ul>
-    <br>
-    <br>
     <br>
     <br>
     <br>
